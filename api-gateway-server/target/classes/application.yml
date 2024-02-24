@@ -1,0 +1,29 @@
+server:
+  port: 5555
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:8761}/eureka/
+  instance:
+    prefer-ip-address: true
+
+spring:
+  application:
+    name: api-gateway-server
+
+
+  cloud:
+    gateway:
+      routes:
+        - id: product-service
+          uri:
+            http:localhost:8201/product-service
+          predicates:
+            - Path=/api/v1/products/**
+
+        - id: cart-service
+          uri:
+            http:localhost:8082/cart-service
+          predicates:
+            - Path=/api/v1/cart/**
