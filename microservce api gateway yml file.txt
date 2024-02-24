@@ -1,0 +1,12 @@
+server:
+  port: 5555
+spring:
+  application:
+    name: api-gateway-server
+  cloud:
+    gateway:
+      routes:
+        - id: product-service
+          uri: lb://PRODUCT-SERVICE
+          predicates:
+	    - Path=/api/products/**
