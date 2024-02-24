@@ -1,0 +1,17 @@
+com\customer\support\services\IssueTicketService.class
+com\customer\support\repositories\IssueTicketRepository.class
+com\customer\support\entities\UserIssue.class
+com\customer\support\repositories\UserIssueRepository.class
+com\customer\support\services\UserServiceImpl.class
+com\customer\support\controllers\UserController.class
+com\customer\support\TeleCommunicationsPortalApplication.class
+com\customer\support\repositories\UserRepository.class
+com\customer\support\services\UserIssueService.class
+com\customer\support\entities\IssueTicket.class
+com\customer\support\services\UserIssueServiceImpl.class
+com\customer\support\controllers\UserIssueController.class
+com\customer\support\services\IssueTicketServiceImpl.class
+com\customer\support\controllers\IssueTicketController.class
+com\customer\support\entities\IssueTicket$TicketStatus.class
+com\customer\support\services\UserService.class
+com\customer\support\entities\User.class
